@@ -1,0 +1,119 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/miser/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/Users/miser/.npm/ispriter/1.0.0/package.tgz', '.' ]
+11 verbose tarball /Users/miser/.npm/ispriter/1.0.0/package.tgz
+12 verbose folder .
+13 info prepublish ispriter@1.0.0
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/miser/.npm/1f1177db-tar.lock
+16 silly lockFile b57dbba7-r-npm-ispriter-1-0-0-package-tgz tar:///Users/miser/.npm/ispriter/1.0.0/package.tgz
+17 verbose lock tar:///Users/miser/.npm/ispriter/1.0.0/package.tgz /Users/miser/.npm/b57dbba7-r-npm-ispriter-1-0-0-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile b57dbba7-r-npm-ispriter-1-0-0-package-tgz tar:///Users/miser/.npm/ispriter/1.0.0/package.tgz
+21 silly lockFile b57dbba7-r-npm-ispriter-1-0-0-package-tgz tar:///Users/miser/.npm/ispriter/1.0.0/package.tgz
+22 silly lockFile a19f742d-miser-npm-ispriter-1-0-0-package /Users/miser/.npm/ispriter/1.0.0/package
+23 verbose lock /Users/miser/.npm/ispriter/1.0.0/package /Users/miser/.npm/a19f742d-miser-npm-ispriter-1-0-0-package.lock
+24 silly lockFile a19f742d-miser-npm-ispriter-1-0-0-package /Users/miser/.npm/ispriter/1.0.0/package
+25 silly lockFile a19f742d-miser-npm-ispriter-1-0-0-package /Users/miser/.npm/ispriter/1.0.0/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { author:
+28 silly publish    { name: 'azrael',
+28 silly publish      email: 'azrael@imatlas.com',
+28 silly publish      url: 'http://imatlas.com/about' },
+28 silly publish   name: 'ispriter',
+28 silly publish   description: 'an intelligent merge sprite tool',
+28 silly publish   version: '1.0.0',
+28 silly publish   homepage: 'http://github.com/miser/ispriter',
+28 silly publish   repository: { type: 'git', url: 'git://github.com/miser/ispriter.git' },
+28 silly publish   main: './src/ispriter.js',
+28 silly publish   engines: { node: '*' },
+28 silly publish   bin: { ispriter: './bin/ispriter' },
+28 silly publish   readme: '#智能合并CSS精灵图([iSpriter](https://github.com/iazrael/ispriter)) \n\n较早前push给作者的图片版本号功能，作者迟迟不发布，只能自己在npm上发布一个项目了。\n\n\tnpm install ispriter2\n\n对应的grunt插件\n\n\tnpm install grunt-ispriter',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: 'c0738cb1cb055190560cbd6a35d280ff472711fa',
+28 silly publish   bugs: { url: 'https://github.com/miser/ispriter/issues' },
+28 silly publish   bundleDependencies:
+28 silly publish    [ 'cssom',
+28 silly publish      'pngjs',
+28 silly publish      'eventproxy',
+28 silly publish      'underscore',
+28 silly publish      'commander',
+28 silly publish      'clean-css' ],
+28 silly publish   _id: 'ispriter@1.0.0',
+28 silly publish   scripts: {},
+28 silly publish   _shasum: '3000f94c3d1a515409191dab78e94af7f5910960',
+28 silly publish   _from: '.' }
+29 verbose request where is /ispriter
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id 9b286e03f2264234
+32 verbose url raw /ispriter
+33 verbose url resolving [ 'https://registry.npmjs.org/', './ispriter' ]
+34 verbose url resolved https://registry.npmjs.org/ispriter
+35 verbose request where is https://registry.npmjs.org/ispriter
+36 info trying registry request attempt 1 at 12:28:03
+37 http PUT https://registry.npmjs.org/ispriter
+38 http 403 https://registry.npmjs.org/ispriter
+39 verbose headers { date: 'Mon, 01 Dec 2014 04:28:05 GMT',
+39 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+39 verbose headers   'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=60',
+39 verbose headers   'content-length': '6726',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   'x-served-by': 'cache-ty67-TYO',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1417408084.200227,VS0,VE1109',
+39 verbose headers   'keep-alive': 'timeout=10, max=50',
+39 verbose headers   connection: 'Keep-Alive' }
+40 error publish Failed PUT 403
+41 error Error: forbidden user: miser not authorized to modify ispriter
+41 error Changed: dist-tags.latest "0.3.9" -> "1.0.0"
+41 error Added: versions.1.0.0
+41 error Changed: readme "#智能合并CSS精灵图(iSpriter)\u000a\u000a什么是智能?\u000a=========\u000a\u000a编写 css 文件时什么都不用管, 该用什么图片用什么图片, 该怎么定位就怎么定位, 不用改变原有的 css 编写方式\u000a\u000a发布前执行 ispriter, 所有合并图片和定位都自动帮你完成\u000a\u000a站在巨人的肩膀上\u000a================\u000a\u000a使用nodejs实现, 依赖[CSSOM](https://github.com/NV/CSSOM), [node-pngjs](https://github.com/niegowski/node-pngjs)\u000a\u000a使用 [bin-packing](https://github.com/jakesgordon/bin-packing) 算法排列图片, 后续支持选择其他算法\u000a\u000a在此, 感谢这些开源项目的作者, 以及给本项目贡献代码的同学\u000a\u000a\u000a特性\u000a====\u000a\u000a+ 智能提取 background 的 url 和 position 等信息\u000a+ 智能设置被合并图片的宽高\u000a+ 智能判断使用了 background-position（使用px为单位）定位的图片并重新定位\u000a+ 支持已经合并了的精灵图再次合并和定位\u000a+ 支持图片去重\u000a+ 支持限制合并后图片的大小\u000a+ 支持设置合并后的图片间距\u000a+ 支持将所有图片合并为一张, 同时所有 CSS 文件合并为一个文件 【新】\u000a+ 支持读取 @import 的样式表进行处理 【新】\u000a+ 支持将所有合并了图片的 CSS 统一输出, 减少代码量 【新】\u000a+ 支持对输出的 CSS 进行压缩(使用 clean-css)【新】\u000a+ 支持排除不需要合并的图片（在 url 后面添加 #unsprite 或者使用 config 文件来配置）【新】\u000a+ 跳过 background-position 是 right/center/bottom 的图片\u000a+ 跳过显式的设置平铺方式为 repreat 的图片\u000a+ 跳过设置了 background-size 的图片\u000a\u000a使用方法\u000a=======\u000a\u000aconfig 的详细参数说明见[CONFIG](./CONFIG.md)\u000a\u000a### config 文件的配置参数\u000a\u000a    {\u000a\u000a        \"input\": {\u000a\u000a            /**\u000a             * 原 cssRoot\u000a             */\u000a            \"cssSource\": [\"./css/style*.css\"]\u000a        },\u000a        \"output\": {\u000a\u000a            /**\u000a             * 原 cssRoot\u000a             */\u000a            \"cssDist\": \"./sprite/css/\",\u000a\u000a            /**\u000a             * 原 imageRoot\u000a             */\u000a            \"imageDist\": \"./img/\",\u000a\u000a            /**\u000a             * 原 maxSize\u000a             */\u000a            \"maxSingleSize\": 60,\u000a            \u000a            \"margin\": 3\u000a        }\u000a    }\u000a\u000a### config 的最简配置\u000a\u000a    {\u000a        \"input\":  \"./../test/css/\", // input cssSource\u000a        \"output\": \"./../test/sprite_output/css/\" // output cssDist\u000a    }\u000a\u000a### 从代码中调用\u000a\u000a    var spriter = require('ispriter');\u000a\u000a    spriter.merge('../src/config.example.json');\u000a\u000a    or \u000a\u000a    spriter.merge(['./css/style.css', './css/style2.css']);\u000a\u000a    or\u000a\u000a    spriter.merge({\u000a        \"input\":  \"./../test/css/\",\u000a        \"output\": \"./../test/sprite_output/css/\"\u000a    });\u000a\u000a### 从命令行调用\u000a    \u000a    npm install ispriter -g\u000a\u000a    cd ./test\u000a\u000a    ispriter -c config.example.json\u000a    \u000a    or\u000a\u000a    ispriter -f style.css, style2.css ...\u000a\u000a### 从 [Mod](https://github.com/modulejs/modjs) 中调用\u000a\u000a    // Modfile\u000a    module.exports = {\u000a        plugins: {\u000a            sprite: \"ispriter\"\u000a        },\u000a        tasks: {\u000a            sprite: {\u000a                page1: {\u000a                    \"input\":  \"./../test/css/\", // input cssSource\u000a                    \"output\": \"./../test/sprite_output/css/\" // output cssDist\u000a                },\u000a                page2: {\u000a                    // 涉及对象类型参数需配置在options中\u000a                    options: {\u000a\u000a                        \"input\": {\u000a                            \"cssSource\": [\"./css/style*.css\"]\u000a                        },\u000a                        \"output\": {\u000a                            \"cssDist\": \"./sprite/css/\",\u000a                            \"imageDist\": \"./img/\",\u000a                            \"maxSingleSize\": 60,\u000a                            \"margin\": 5\u000a                        }\u000a                    }\u000a                }\u000a            }\u000a        }\u000a    }\u000a\u000a### 排除不需要合并的图片\u000a只要在写样式的时候, 在 background-image 的图片url加上 #unsprite 即可, 例如:\u000a    \u000a    background: url(../images/loading.png#unsprite);\u000a\u000a    background: url(../images/loading.png?t=123#unsprite);\u000a\u000a    background: url(../images/loading.png#hash#unsprite);\u000a\u000a也可以在 config 中指定 ignoreImages 来实现, 所有匹配上的图片都不会合并, 可以使用通配符, 例如: \u000a\u000a    \"ignoreImages\": \"icons/*\"\u000a    \u000a    \"ignoreImages\": [\"icons/*\", \"loading.png\"]\u000a\u000aExample\u000a=======\u000a\u000a具体实例请查看 examples 目录下的 demo, 进入具体目录, 执行\u000a\u000a    ispriter -c config.json \u000a体验实际效果\u000a\u000aLicense\u000a=======\u000a\u000a[MIT](./LICENSE)\u000a" -> "#智能合并CSS精灵图([iSpriter](https://github.com/iazrael/ispriter)) \u000a\u000a较早前push给作者的图片版本号功能，作者迟迟不发布，只能自己在npm上发布一个项目了。\u000a\u000a\u0009npm install ispriter2\u000a\u000a对应的grunt插件\u000a\u000a\u0009npm install grunt-ispriter"
+41 error Changed: time.modified "2014-05-29T02:33:08.692Z" -> "2014-12-01T04:29:01.209Z"
+41 error Added: time.1.0.0
+41 error Changed: repository.url "git://github.com/iazrael/ispriter.git" -> "git://github.com/miser/ispriter.git"
+41 error Changed: homepage "http://imatlas.com/posts/ispriter-update/" -> "http://github.com/miser/ispriter"
+41 error Changed: bugs.url "https://github.com/iazrael/ispriter/issues" -> "https://github.com/miser/ispriter/issues"
+41 error Added: _attachments: ispriter
+41 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+41 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+41 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:236:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:943:16
+41 error     at process._tickCallback (node.js:419:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Darwin 14.0.0
+44 error command "node" "/usr/local/bin/npm" "publish"
+45 error cwd /Users/miser/code/ispriter
+46 error node -v v0.10.32
+47 error npm -v 1.4.28
+48 verbose exit [ 1, true ]
